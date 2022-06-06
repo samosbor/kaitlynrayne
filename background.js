@@ -16,18 +16,10 @@ function getRandomColor() {
     return newColor;
 }
 
-let ready = false
-
-window.addEventListener("imagesReady", event => {
-    ready = true;
-})
-
 function changeBackground() {
-    if (ready) {
-        window.requestAnimationFrame(function () {
-            document.body.style.backgroundColor = getRandomColor();
-        });
-    }
+    window.requestAnimationFrame(function () {
+        document.body.style.backgroundColor = getRandomColor();
+    });
 }
 
 setInterval(changeBackground, 350);

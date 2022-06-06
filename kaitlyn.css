@@ -15,12 +15,6 @@ body {
     height: 100%;
 }
 
-.hidden-start {
-    background-color: lightskyblue;
-    animation-name: none;
-    visibility: hidden;
-}
-
 .center-screen {
     display: flex;
     margin-top: -8rem;
