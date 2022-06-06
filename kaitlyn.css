@@ -1,0 +1,98 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: lightskyblue;
+    background-size: 200px;
+    animation-name: bg;
+    animation-duration: 2.45s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+    height: 100%;
+}
+
+.hidden-start {
+    background-color: lightskyblue;
+    animation-name: none;
+    visibility: hidden;
+}
+
+.center-screen {
+    display: flex;
+    margin-top: -8rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    font-size: 11vh;
+    text-shadow: 2px 2px white;
+}
+
+.link-menu {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 4vh;
+    text-shadow: 1px 1px white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0rem;
+}
+
+@media (min-width: 800px) {
+    ul {
+        display: inline-flex;
+    }
+
+    .link-menu {
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+li {
+    margin: 1rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+@keyframes bg {
+
+    0%,
+    100% {
+        background-image: url("pics/0.gif");
+    }
+
+    14.2857142857% {
+        background-image: url("pics/1.gif");
+    }
+
+    28.5714285714% {
+        background-image: url("pics/2.gif");
+    }
+
+    42.8571428571% {
+        background-image: url("pics/3.gif");
+    }
+
+    57.1428571429% {
+        background-image: url("pics/4.gif");
+    }
+
+    71.4285714286% {
+        background-image: url("pics/5.gif");
+    }
+
+    85.7142857143% {
+        background-image: url("pics/6.gif");
+    }
+}
